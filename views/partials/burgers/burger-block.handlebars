@@ -2,9 +2,8 @@
 
 	{{burger_name}}
 
-	<button class="btn btn-info change-eat" data-id="{{id}}" data-neweat="{{devour}}">
-	<span class="glyphicon glyphicon-skull"></span>
-		{{#if devour}} Devour it!!{{else}}TRASH!{{/if}}
+	<button class="btn btn-danger change-eat" data-id="{{id}}" data-neweat="{{devour}}">
+		{{#if devour}}<img src="http://icons.iconarchive.com/icons/iconsmind/outline/128/Pac-Man-icon.png" class="img-tiny">Devour it!!{{/if}}
 	</button>
 
 </li>

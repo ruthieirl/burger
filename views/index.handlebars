@@ -2,9 +2,7 @@
 
   <div class="jumbotron">
   
-  <h1 class="text-center"><span class="glyphicon glyphicon-cutlery"></span> Eat-Da-Burger Dinner Party</h1>
-
-  <hr>
+  <h1 class="text-center">Eat-Da-Burger <img src="https://www.materialui.co/materialIcons/maps/restaurant_menu_black_192x192.png" class="img-tiny"> Dinner Party</h1>
 
   <h2>Invite a Burger</h2>
   
@@ -14,24 +12,24 @@
 
     <div class="form-group">
       <label for="bu">Burger Name:</label><br>
-      <input type="text" id="bu" name="burger_name">
+      <input type="text" id="bu" name="burger_name" class="form-control">
     </div>
 
-    <div class="form-group">
-      <label for="devo">Devoured?</label><br>
-      <input type="radio" name="devour" value="1" checked> Devoured!<br>
-      <input type="radio" name="devour" value="0"> Available
-    </div>
-
-    <button class="btn btn-info btn-block" type="submit"><span class="glyphicon glyphicon-envelope"></span> Send Invite</button>
+    <button class="btn btn-warning btn-block" type="submit"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Envelope_font_awesome.svg/2000px-Envelope_font_awesome.svg.png" class="img-teeny"> Send Invite</button>
   </form>
   
   </div><!--jumbotron-->
 
   <div class="row">
-    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">    
+    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">   
 
-    <h2 class="text-center">Burgers On Da Menu!</h2>
+      <div class="paper"> 
+
+        <h2 class="text-center"><img src="https://cdn2.iconfinder.com/data/icons/maki/100/fast-food-512.png" class="img-tiny"> Burgers On Da Menu!</h2>
+
+        <p class="text-center">These burgers are for the taking.</p>
+
+      </div>
 
       <ul>
         {{#each burgers}}
@@ -40,19 +38,27 @@
           {{/unless}}
         {{/each}}
       </ul>
+    
     </div>
     
     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-    
-    <h2 class="text-center">All My Friends Are Dead!</h2>
 
-    <ul>
-      {{#each burgers}}
-        {{#if devoured}}
-          {{> burgers/burger-block devour=false}}
-        {{/if}}
-      {{/each}}
-    </ul>
+      <div class="paper">
+
+        <h2 class="text-center">All My Friends Are Dead! <img src="http://downloadicons.net/sites/default/files/skull-and-cross-bones-icons-75643.png" class="img-tiny"></h2>
+
+        <p class="text-center">These burgers have already been taken...and eaten.</p>
+
+      </div>
+
+      <ul>
+        {{#each burgers}}
+          {{#if devoured}}
+            {{> burgers/burger-block devour=false}}
+          {{/if}}
+        {{/each}}
+      </ul>
+    
     </div>
   
   </div><!--row-->

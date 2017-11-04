@@ -1,9 +1,11 @@
 .jumbotron {
+	background-image: url("http://themescompany.com/wp-content/uploads/2011/07/lined-paper-background1.jpg");
 	margin-top: 30px;
+	border: 2px solid #bfbfbf;
 }
 
 body {
-	background-image: url("/public/assets/images/cork-board.jpg");
+	background-image: url("http://www.publicdomainpictures.net/pictures/30000/velka/cork-board.jpg");
 	font-family: 'Gochi Hand', cursive;
 }
 
@@ -11,27 +13,44 @@ li {
   font-size: 1.5em;
   color: #fff;
   padding: 20px 20px;
-  margin: 5px;
+  margin: 5px 5px 5px -32px;
   background: #242;
-  border: 5px solid #d94;
+  border: 5px solid #ac6d20;
   list-style-type: none;
 }
 
-.btn-info {
+.paper {
+	background-image: url("http://themescompany.com/wp-content/uploads/2011/07/lined-paper-background1.jpg");
+	border: 2px solid #bfbfbf;
+	padding: 15px 10px 5px 10px;
+}
+
+.btn-danger {
 	color: #fff;
 	float: right;
+	border: 1px solid #fff;
+}
+
+.btn-warning {
+	border: 1px solid #000;
 }
 
 .label {
   font-weight: bold;
+  font-size: 2em;
 }
 
-.create-update-form {
-  padding: 5px;
-  margin: 5px;
-  background: aqua;
+.img-responsive {
+	max-width: 50px;
+	height: auto;
 }
 
-.form-group {
-  margin-bottom: 5px;
+.img-tiny {
+	max-width: 30px;
+	height: auto;
+}
+
+.img-teeny {
+	max-width: 15px;
+	height: auto;
 }
