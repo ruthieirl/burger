@@ -1,7 +1,7 @@
 -----------------------------------------
 # Eat-Da-Burger
 
-#### Node.js Express Handlebars MySQL Bootstrap HTML CSS
+#### Node.js * Express * Handlebars * MySQL * Bootstrap * HTML * CSS
 
 
 -----------------------------------------
